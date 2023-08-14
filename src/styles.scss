@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('./app/styles/reset.scss');
+
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a{
+  color: #777;
+}
+
+button{
+  // width: 40px;
+  // height: 40px;
+  line-height: auto;
+  background-color: #fff;
+  border: 1px solid #424242;
+  border-radius: 4px;
+  font-size: 1.6em;
+  color: #424242;
+}
+
+.product {
+  app-img {
+    img {
+      border-radius: 0.8em;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<div class="product">
+  <!-- el [img] es el nombre del @input  -->
+  <!-- <app-img *ngIf="product.images.length > 0" class="product--cover" [img]="product.images[0]"></app-img>-->
+  <app-img [img]="'img'"></app-img>
+  <div class="product-body">
+    <div class="product--info">
+      <!-- <h4 class="product--category">{{ product.category }}</h4> -->
+      <h3 class="product--price">${{ product.price }}</h3>
+      <h2 class="product--name">{{ product.title }}</h2>
+    </div>
+    <div class="product-footer">
+      <button class="btn-add-cart" (click)="showDetailProduct()"><i class='bx bx-detail'></i></button>
+      <button class="btn-add-cart" (click)="onAddToCart()"><i class='bx bx-cart-add' ></i></button>
+    </div>
+  </div>
+</div>
+

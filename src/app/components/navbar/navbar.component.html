@@ -1,0 +1,38 @@
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-left">
+            <h2 class="navbar-brand">FOXCORD</h2>
+        </div>
+        <div class="navbar-central nav-view-desktop">
+            <ul class="navbar-links">
+                <li><a href="#">Enlace 01</a></li>
+                <li><a href="#">Enlace 02</a></li>
+                <li><a href="#">Enlace 03</a></li>
+                <li><a href="#">Enlace 04</a></li>
+                <li><a href="#">Enlace 04</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <p class="navbar-email">lana@sherlock.com</p>
+            <a href="#"class="navbar-icon-cart">
+                <i class='bx bx-cart'></i>
+                <span class="cart-counter">{{counter}}</span>
+            </a>
+            <a href="#" (click)="toogleMenu()" class="nav-view-mobile navbar-icon-menu">
+                <i class='bx bx-menu'></i>
+            </a>
+        </div>
+    </div>
+    <div class="navbar-side-menu" [class.active]="activeMenu">
+        <a class="btn-close-side-menu" href="#" (click)="toogleMenu()">
+            <i class='bx bx-x-circle'></i>
+        </a>
+        <ul class="navbar-links">
+            <li><a href="#"><i class='bx bx-spa'></i>Enlace 01</a></li>
+            <li><a href="#"><i class='bx bx-spa'></i>Enlace 02</a></li>
+            <li><a href="#"><i class='bx bx-spa'></i>Enlace 03</a></li>
+            <li><a href="#"><i class='bx bx-spa'></i>Enlace 04</a></li>
+            <li><a href="#"><i class='bx bx-spa'></i>Enlace 04</a></li>
+        </ul>
+    </div>
+</nav>

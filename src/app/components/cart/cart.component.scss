@@ -1,0 +1,102 @@
+.cart{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100%);
+    &.active{
+        transform: translateX(0%);
+    }
+    .cart-container{
+        width: 100%;
+        margin: 2.4em auto;
+        .cart-content-products{
+            margin: 3.2em 0;
+            width: 90%;
+            margin: 4em auto;
+            .cart-product-item{
+                display: grid;
+                grid-template-columns: 1.5fr 4fr .5fr;
+                align-items: center;
+                gap: 3em;
+                .cart-product-cover{
+                    width: 100%;
+                }
+                .cart-product-description{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    text-align: left;
+                    h3{
+                        font-size: 1.8em;
+                        font-weight: 600;
+                        margin-bottom: .6em;
+                        line-height: normal;
+                    }
+                    p{
+                        font-size: 1.8em;
+                        margin-bottom: .6em;
+                        font-weight: 400;
+                    }
+                }
+                .cart-product-count{
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    .count{
+                        font-size: 1.4em;
+                    }
+                }
+                .cart-product-actions{
+                    button{
+                        border: none;
+                        i{
+                            font-size: 1.8em;
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+
+        .cart-header{
+            width: 100%;
+            background-color: #424242;
+            padding: 24px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2.4em 1.6em;
+            color: #fff;
+            h2{
+                font-size: 2.4em;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+            a{
+                align-self: flex-end;
+                color: #fff;
+                i {
+                  font-size: 3em;
+                }
+            }
+        }
+
+        .cart-counts{
+            width: 90%;
+            margin: auto;
+            border-top: 1px solid #424242;
+            .cart-counts-info{
+                display: flex;
+                justify-content: space-between;
+                margin: 12px auto;
+                h4, span{
+                    font-size: 1.8em;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

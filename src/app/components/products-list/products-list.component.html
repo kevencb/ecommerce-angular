@@ -1,0 +1,13 @@
+<h2>Cantidad: {{ myShoppingCart.length }}</h2>
+<h2>Total: {{ total }}</h2>
+
+<button (click)="toogleProductDetail()">Open Product Detail</button>
+
+<div class="products--grid">
+  <app-product
+    [product]="product"
+    *ngFor="let product of products"
+    (addedProduct)="onAddToShoppingCart($event)"
+    (detailProduct)="onshowDetailProduct($event)"
+  ></app-product>
+</div>
